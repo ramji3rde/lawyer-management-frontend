@@ -1,0 +1,127 @@
+/* .new-feature-container{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    
+    justify-content:space-between;
+    background-color: black;
+    color: white;
+}
+.main-container{
+ margin-left:5% ;
+}
+.faq-img{
+  
+    margin-top: 3%;
+    margin-left: -4%;
+}
+.first-question{
+    border-left: 2px solid green;
+    padding: 0 0 0 3%;
+    margin-top: 5%;
+}
+.first-question p{
+    
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    font-weight: bold;
+}
+.para{
+    width: 78%;
+    margin-top: -15px;
+}
+.question-para{
+    width: 81%;
+    height: 61px;
+    background: white;
+    color: black;
+    margin-top: 10px;
+    padding: 0 0 0 10px;
+}
+.faq-questions{
+    margin-top: 8%;
+  
+}
+.faq-questions p{
+    border-bottom: 1px solid green;
+    width: 80%;
+    margin-top: 2%;
+}
+.sign1{
+    color: white;
+    margin-left: 42%;
+    
+}
+.sign2{
+    color: white;
+    margin-left: 40%;
+}
+.sign3{
+    color: white;
+    margin-left: 61%;
+}
+.sign4{
+    color: white;
+    margin-left: 26%;
+}
+@media screen and (min-width:220px) and (max-width: 1024px){
+    .new-feature-container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: space-between;
+    background-color: black;
+    color: white;  
+}
+.faq-img {
+    
+    margin-left: 0%;
+    height: 49vh;
+    width: 99%;
+}
+.sign1 {
+    color: white;
+    margin-left: 7%;
+}
+.sign2 {
+    color: white;
+    margin-left: 79%;
+}
+.sign3 {
+    color: white;
+    margin-left: 24%;
+}
+.sign4 {
+    color: white;
+    margin-left: 52%;
+}
+.question-para {
+    
+    height: 79px;
+    
+}
+.newclient-container {
+    display: flex;
+    flex-direction: column;
+    margin-left: 4%;
+    margin-top: 0%;
+    width: 100%;
+}
+.client-pic-text {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10%;
+    margin-left: 19px;
+}
+.client-container {
+    margin-top: 30px;
+}
+.client-container p{
+    width: 99%;
+}
+.client-pic-text {
+    display: flex;
+    margin-top: 12%;
+    margin-left: 35px;
+}
+} */

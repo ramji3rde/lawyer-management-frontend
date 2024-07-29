@@ -1,0 +1,150 @@
+.main-client {
+  width: 100%;
+  height: 80vh;
+  background: #313131;
+  /* background: cornflowerblue; */
+  color: white;
+}
+.client-container h3 {
+  color: white;
+  font-size: 45px;
+  font-family: Roboto;
+  font-weight: bold;
+}
+.newclient-container {
+  display: flex;
+  flex-direction: column;
+  /* margin-top: 5%; */
+}
+.client-container {
+  border-left: 2px solid green;
+  padding: 0 0 0 20px;
+  height: 20vh;
+  margin-top: 62px;
+  position: relative;
+}
+
+.client-container::after {
+  content: "05";
+  position: absolute;
+  top: 0;
+  font-size: 220px;
+  line-height: 172px;
+  color: #5a5a5a;
+  opacity: 0.2;
+}
+
+.client-container p {
+  width: 48%;
+  font-size: 21px;
+  font-family: playfair Displa;
+}
+.client-pic-text {
+  display: flex;
+  flex-direction: row;
+  margin-top: 5%;
+  margin-left: 55px;
+}
+.client-text {
+  margin-left: 5%;
+}
+
+.img-footer {
+  margin-left: 8px;
+  margin-top: 55px;
+}
+.client-text p {
+  width: 63%;
+  font-size: 14px;
+  font-family: open Sans;
+}
+.client-avatar {
+  width: 150px;
+  height: 150px;
+  border-radius: 75px;
+}
+@media screen and (min-width: 220px) and (max-width: 1024px) {
+  .main-client {
+    width: 100%;
+    height: 100vh;
+    /* background: black; */
+    background: cornflowerblue;
+    color: white;
+  }
+  .client-container {
+    margin-top: 23px;
+  }
+  .client-container p {
+    width: 100%;
+  }
+  .client-pic-text {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10%;
+    margin-left: -34px;
+  }
+  .client-text {
+    width: 100%;
+    margin-left: 4%;
+    height: 48vh;
+  }
+  .client-avatar {
+    margin-left: 14%;
+  }
+}
+
+.slick-slider {
+  .slick-prev,
+  .slick-next {
+    display: none !important;
+  }
+  .fa-quote-left {
+    margin-left: -40px;
+    font-size: 32px;
+    margin-right: 8px;
+  }
+  .slick-dots {
+    li {
+      margin: 0;
+      button {
+        font-size: 0;
+        line-height: 0;
+        display: block;
+        width: 3px;
+        height: 3px;
+        padding: 3px;
+        cursor: pointer;
+        color: transparent;
+        border: 0;
+        outline: none;
+        background: transparent;
+        border-radius: 50%;
+        border: 1px solid #fff;
+        &::before {
+          font-family: "slick";
+          font-size: 6px;
+          line-height: 14px;
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 14px;
+          height: 0px;
+          content: "•";
+          text-align: center;
+          opacity: 0.25;
+          -webkit-font-smoothing: antialiased;
+        }
+      }
+      &.slick-active {
+        button {
+          background-color: #fff;
+          width: 12px;
+          height: 12px;
+          &::before {
+            color: transparent;
+          }
+        }
+      }
+    }
+  }
+}

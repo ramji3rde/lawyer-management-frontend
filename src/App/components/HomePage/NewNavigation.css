@@ -1,0 +1,88 @@
+/* .nav-link .cust-btn-primary{
+   border-radius:22px;
+    outline: none;
+   background-color:#181884;
+    color:white;
+    
+    padding: 9px 26px
+} */
+a.login {
+  border-radius: 30px;
+  outline: none;
+  background-color: rgb(24, 24, 132);
+  color: white;
+  padding: 10px 36px;
+  border: none;
+  display: flex;
+  flex-direction: row;
+  font-family: myriadopro;
+}
+a.signup {
+  border-radius: 30px;
+  outline: none;
+  background-color: #0bc25d;
+  color: white;
+  padding: 10px 36px;
+  border: none;
+  display: flex;
+  flex-direction: row;
+  font-family: myriadopro;
+}
+.nav-bar {
+  display: flex;
+  margin-bottom: 0;
+  /* background-color: darkblue; */
+}
+
+.nav-bar .nav-item {
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.navbar-fixed {
+  background-color: darkred;
+}
+/* .main-logo {
+  width: 40%;
+} */
+#menu .nav-link {
+  color: #2d3c43;
+  margin-left: 14px;
+  margin-right: 14px;
+  font-size: 16px;
+  padding: 0 !important;
+  font-family: Roboto;
+}
+@media screen and (min-width: 220px) and (max-width: 1024px) {
+  a.login {
+    border-radius: 30px;
+    outline: none;
+    background-color: rgb(24, 24, 132);
+    color: white;
+    padding: 10px 36px;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+  }
+  a.signup {
+    border-radius: 30px;
+    outline: none;
+    background-color: #0bc25d;
+    color: white;
+    padding: 8px 30px;
+    border: none;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+  }
+  /* .main-logo {
+    width: 70px;
+    align-self: center;
+    margin-top: 6px;
+  } */
+}
+
+.navbar {
+  padding: 12px 0 !important;
+}

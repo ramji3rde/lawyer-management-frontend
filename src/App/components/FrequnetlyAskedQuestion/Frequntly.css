@@ -1,0 +1,82 @@
+.frequntly-cotainer {
+  display: flex;
+  flex-direction: row;
+  background-color: black;
+
+  padding: 50px;
+}
+
+.frequntly-cotainer .totalFaq {
+  position: relative;
+}
+
+.frequntly-cotainer .totalFaq::after {
+  content: "04";
+  position: absolute;
+  top: 0;
+  font-size: 175px;
+  line-height: 127px;
+  color: #0c9e61;
+  opacity: 0.2;
+}
+.ant-collapse-header {
+  color: #fff !important;
+}
+
+.frequntly-cotainer .ant-collapse > .ant-collapse-item > .ant-collapse-header {
+  padding-left: 10px;
+}
+
+.frequntly-cotainer .ant-collapse-content-box {
+  padding-left: 0;
+}
+
+.ant-collapse-borderless > .ant-collapse-item {
+  border-bottom: 1px solid green;
+}
+.ant-collapse > .ant-collapse-item > .ant-collapse-header {
+  /* font-weight: 700; */
+  font-size: 16px;
+  font-family: roboto;
+}
+.frequntly-collapse p {
+  color: white;
+
+  padding-left: 10px;
+}
+/* .frequntly-collapse{
+    font-family: roboto;
+} */
+.ant-collapse-header:focus {
+  color: green !important;
+}
+
+/* span p{
+    border-left: 3px solid green;
+} */
+.ant-collapse > .ant-collapse-item > .ant-collapse-header {
+  position: relative;
+  padding: 12px 16px;
+  padding-left: 40px;
+  /* color: rgba(0, 0, 0, 0.85); */
+  line-height: 1.5715;
+  cursor: pointer;
+
+  /* transition: all 0.3s; */
+}
+
+div.ant-collapse-item {
+  color: violet;
+  background-color: turquoise;
+}
+
+@media screen and (min-width: 220px) and (max-width: 1024px) {
+  .frequntly-cotainer {
+    display: flex;
+    flex-direction: column;
+    border: none;
+  }
+  .frequntly-img {
+    width: 100%;
+  }
+}

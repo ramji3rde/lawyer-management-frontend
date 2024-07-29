@@ -1,0 +1,43 @@
+.card-title {
+  color: rgb(24, 24, 132);
+}
+
+.container-welcome{
+
+  display: flex;
+  flex-direction: row;
+  padding-left: 12%;
+  font-family: roboto;
+  /* align-items: flex-end; */
+  /* background: blanchedalmond; */
+  justify-self: unset;
+  margin-top: 10%;
+
+}
+.welcome-para{
+    width: 76%;
+}
+.welcome-main-para{
+    width: 76%;
+}
+.welcome-title{
+  color: rgb(24, 24, 132);
+  font-weight: bold;
+  font-size: 35px;
+  
+}
+@media screen and (min-width:220px) and (max-width: 1024px){
+
+  .container-welcome{
+   
+    display: flex;
+    margin-top: 34%;
+    flex-direction: column;
+    
+    
+}
+.welcome-text{
+  margin-top: 23%;
+
+}
+}

@@ -1,0 +1,216 @@
+.form-size{
+    min-height: calc(100vh - 90px);
+}
+form {
+    padding-top: 20px;
+}
+label {
+	font-size: 12px;
+	font-weight: 400;
+	font-family: $main-fonts;
+	float: left;
+}
+
+button:not(:disabled), [type="button"]:not(:disabled), [type="reset"]:not(:disabled), [type="submit"]:not(:disabled) {
+    cursor: pointer;
+    outline: none;
+}
+
+.ant-card-head-title{
+    padding: 10px 0px !important;
+    font-weight: 700;
+}
+.ant-card-head {
+    min-height: 40px !important;
+}
+
+.form-add-button{
+    height: 30px;
+    font-size: 12px !important;
+    padding: 6px 12px !important;
+    margin-bottom: 10px !important;
+}
+.form-add{
+    span{
+        cursor: pointer;
+        font-weight: 600;
+        color: #04a9f5;
+    }
+}
+.form-minus{
+    span{
+        cursor: pointer;
+        font-weight: 600;
+        color: #04a9f5;
+    }
+}
+.form-width{
+    width: 75% !important;
+}
+.form-width2{
+    width: 50% !important;
+}
+.form-add::before {
+    content: "+";
+    height: 20px;
+    font-size: 12px;
+    padding: 1px 5px;
+    border-radius: 50%;
+    background-color: #04a9f5;
+    color: #fff;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.form-minus::before {
+    content: "-";
+    height: 20px;
+    font-size: 12px;
+    padding: 1px 6px;
+    border-radius: 50%;
+    background-color: #04a9f5;
+    color: #fff;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.form-flex-equal {
+    flex : 1
+}
+.support-form-div{
+    background: #fff;
+    border-radius: 10px;
+}
+.form-upload-button{
+    cursor: pointer;
+    text-align: center;
+    border-radius: 4px;
+    box-shadow: none;
+    padding: .65rem 1rem;
+    display: inline-block;
+    background: #fff;
+    color: #4e4e91;
+    border: 1px solid #4e4e91;
+    margin: 0;
+}
+.table-span-dark {
+    color: #4e4e91;
+    font-weight: 600;
+}
+.ant-tabs-nav {
+    background: #fff;
+    border: 1px solid #f0f0f0;
+}
+.ant-tabs-tab {
+    margin: 0px !important;
+    padding: 10px 18px !important;
+    border-right: 1px solid #f0f0f0 !important;
+}
+.ant-tabs-tab.ant-tabs-tab-active {
+    background: #f4f7f9 !important;
+}
+
+.table-span-light{
+    font-weight: 600;
+}
+.form-header-text{
+    color: #004;
+    font-family: Noto Sans,Tahoma,sans-serif;
+    font-size: 19px;
+    font-weight: 600;
+}
+.form-header-container{
+    border-bottom:  1px solid #c5c5c5;
+}
+
+
+
+.form-details{
+    label {
+        color: #4e4e91;
+        cursor: pointer;
+        display: block;
+        font-size: 13px;
+        font-weight: 600;
+    }
+    h4 {
+        color: #4e4e91;
+    }
+}
+
+.form-control,
+select {
+    display: block;
+    width: 100%;
+    padding: 6px 12px;
+    font-size: 16px;
+    line-height: 1.42857143;
+    color: #444;
+    background-color: $white !important;
+    background-image: none;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    -webkit-transition: none;
+    -o-transition: none;
+    transition: none;
+    height: 45px;
+    &:focus {
+        border-color: #999;
+        outline: 0;
+        -webkit-box-shadow: transparent;
+        box-shadow: transparent;
+    }
+       
+}
+.form-control {
+	&::-webkit-input-placeholder {
+		color: #777;
+	}
+	&:-moz-placeholder {
+		color: #777;
+	}
+	&::-moz-placeholder {
+		color: #777;
+	}
+	&:-ms-input-placeholder {
+		color: #777;
+	}
+}
+.e-input-group.e-error, .e-input-group.e-control-wrapper.e-error, .e-input-group.e-error:not(.e-float-icon-left), .e-input-group.e-control-wrapper.e-error:not(.e-float-icon-left) {
+    border-bottom-color: rgba(0, 0, 0, 0.42) !important;
+}
+.e-input:focus:not(.e-success):not(.e-warning):not(.e-error) {
+    border-color: #000 !important;
+    border-bottom: 1px solid;
+}
+
+.ant-collapse > .ant-collapse-item > .ant-collapse-header {
+    font-weight: 700;
+    font-size: 16px;
+}
+.ant-collapse{
+    background-color: #fff !important;
+}
+
+
+.e-ddl-hidden{
+    padding: 0;
+}
+
+.quickBill{
+    padding-top: 0px;
+    input,select {
+        border: 1px dashed #b0bec5;
+        padding: 4px 10px;
+        height: auto !important;
+    }
+    .form-group {
+        margin-bottom: 5px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .form-width, .form-width2{
+        width: 100% !important;
+    }
+}

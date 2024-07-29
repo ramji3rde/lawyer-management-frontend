@@ -1,0 +1,145 @@
+.circle-container{
+    display: flex;
+    flex-direction: row;
+}
+.feature-para{
+    font-size: 18px;
+    color: #000000;
+    font-weight: 600;
+    font-family: Roboto;
+}
+.feature-title{
+    color: rgb(24, 24, 132);
+    text-align: center;
+}
+
+ .circle-container h6{
+   color: black;
+}
+.header-pic{
+    height: 10vh;
+    /* width: 100px; */
+    margin-top: -97%;
+    margin-left: 42%;
+}
+
+.contact{
+    margin: -12% 0 0 33%;
+    width: 114%;
+}
+.billing{
+    margin-left: 24%;
+    width: 122%;
+    margin-top: 14%;
+}
+.document{
+    margin-left: 36%;
+    width: 106%;
+    margin-top: 43%;
+}
+.accounts{
+    margin-left: -51%;
+    width: 109%;
+    margin-top: -21%;
+}
+.dashboard{
+    margin-left: -33%;
+    width: 150%;
+    margin-top: 16%;
+}
+.task{
+    margin-left: -50%;
+    margin-top: 57%;
+    width: 140%;
+
+}
+.desc{
+    font-size: 16px;
+}
+
+ 
+@media screen and (min-width:220px) and (max-width: 1024px){
+    /* .header-pic {
+        margin-top: -98%;
+        margin-left: 42%;
+        height: 76px;
+    }
+    .dot{
+        margin-top: -7%;
+        margin-left: 48.5%;
+}
+.header-pic {
+    margin-top: -144%;
+    margin-left: 65%;
+    height: 77px;
+} */
+.feature-para {
+    font-weight: bold;
+    font-size: 10px;
+}
+.header-pic{
+    margin-left: -59%;
+    margin-top: 21%;
+    height: 7vh;
+}
+
+.circle
+{  
+    /* position: relative; */
+    height: 41vh;
+    margin-left: -18%;
+    margin-top: 28%;
+}
+.contact{
+    width: 190%;
+    font-size: 11px;
+    margin-top: 25px;
+    margin-left: 21%;
+}
+.billing{
+    width: 100%;
+    font-size: 11px;
+    margin-top: 31%;
+    margin-left: -11px;
+}
+.document{
+    width: 200%;
+    font-size: 11px;
+    margin-top: 21%;
+    margin-left: 1%;
+}
+.accounts{
+    
+    margin-left: -259%;
+    font-size: 11px;
+    margin-top: 45%;
+    width: 219%;
+
+}
+.dashboard{
+    margin-left: -127%;
+    font-size: 11px;
+    width: 96%;
+    margin-top: 33%;
+}
+.task{
+    margin-left: -203%;
+    font-size: 11px;
+    margin-top: 40%;
+    width: 151%;
+
+}
+.dot{
+    margin-top: -22px;
+    margin-left: 48.5%;
+    background-color: rgb(24, 24, 132);
+    width: 3%;
+}
+.desc {
+    font-size: 12px;
+}
+}
+  
+
+
+

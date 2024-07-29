@@ -1,0 +1,110 @@
+
+.newcard {
+    position: absolute;
+    background-color: white;
+    top: 76%;
+    display: flex;
+    align-self: center;
+    padding: 28px;
+    width: 76%;
+    /* margin-left: 12%; */
+    justify-content: center;
+    box-shadow: 5px 5px 15px 5px #21212140;
+    transform: translate(14%, 88%);
+}
+
+.newcard-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-family: myridopro;
+    /* background-color: red; */
+    /* margin: 0 3% 0 0% */
+}
+.newcard-container-img-text{
+    display: flex;
+    flex-direction: row;
+    
+}
+.newcard-text{
+    display: flex;
+    flex-direction: column;
+    margin-left: 10%;
+
+}
+
+.box-numbers{
+    color:  rgb(24, 24, 132);
+    font-weight: bold;
+    font-size: 25px;
+}
+.newcard-img{
+    /* width: 100%; */
+    align-self: center;
+}
+@media screen and (min-width:220px) and (max-width: 1024px) {
+    .newcard-container{
+        display: flex ;
+        flex-direction: column;
+        align-items: center;
+    }
+    .newcard-container-img-text{
+        display: flex;
+        flex-direction: row;
+        width: 91%;
+
+        /* justify-self: center; */
+        
+    }
+    .newcard {
+        /* position: absolute; */
+        
+            
+             margin-left: 0px;
+            z-index: 1;
+            background-color: white;
+            display: flex;
+            align-self: center;
+            padding: 0px;
+            width: 76%;
+            justify-content: center;
+            top: 63%;
+            box-shadow: 5px 5px 15px 5px #21212140;
+            transform: translate(14%, 28%);
+        
+    }
+
+}
+
+/* .container-box{
+    display: flex;
+    z-index: 1;
+    overflow: visible;
+    flex-direction: row;
+    align-self: center;
+    justify-content: space-evenly;
+    width: 100%;
+    
+}
+.container-box img{
+    width: 24%;
+    height: 11vh;
+    display: flex;
+    align-self: center; 
+    
+}
+.box-numbers-1{
+    color: red;
+    font-weight: bold;
+    font-size: 23px;
+}
+.box-numbers{
+    color: rgb(24, 24, 132);
+    font-weight: bold;
+    font-size: 23px;
+}
+.container-box p{
+    margin-top: 0;
+    margin-bottom: 1em;
+    width: 64%;
+} */

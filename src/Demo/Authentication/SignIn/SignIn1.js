@@ -1,0 +1,180 @@
+import React, { useState } from "react";
+import { NavLink } from "react-router-dom";
+
+import "./../../../assets/scss/style.scss";
+import Aux from "../../../hoc/_Aux";
+import Breadcrumb from "../../../App/layout/AdminLayout/Breadcrumb";
+import { useDispatch } from "react-redux";
+import { loginUser } from "../../../store/Actions";
+import { notification, Spin } from "antd";
+
+const validEmailRegex = RegExp(
+  /^(([^<>()\[\]\.,;:\s@\"]+(\.[^<>()\[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i
+);
+
+const AdminLogin = (props) => {
+  const dispatch = useDispatch();
+  const [Display, setDisplay] = useState(false);
+  const [spinner, setSpinner] = useState(false);
+  const [checked, setChecked] = useState(true);
+  const [state, setState] = useState({});
+  const [errors, setErrors] = useState({
+    emailAddress: "",
+    password: "",
+  });
+
+  const handleChange = (e) => {
+    e.persist();
+    setDisplay(false)
+    const { name, value } = e.target;
+    setState((st) => ({ ...st, [name]: value }));
+    var err = errors;
+    switch (name) {
+      case "emailAddress":
+        err.emailAddress = validEmailRegex.test(value)
+          ? ""
+          : "Email is not valid!";
+        break;
+      case "password":
+        err.password =
+          value.length < 6 ? "Password must be at least 6 characters" : "";
+        break;
+      default:
+        break;
+    }
+    setErrors({ ...err });
+  };
+
+  const handleLogin = (e) => {
+   // e.preventDefault();
+    notification.destroy()
+    if(!Display){
+      setSpinner(true);
+    const validateForm = (error) => {
+      let valid = true;
+      Object.values(error).forEach((val) => val.length > 0 && (valid = false));
+      return valid;
+    };
+    if (validateForm(errors)) {
+      checkValidity();
+    } else {
+      setSpinner(false);
+      setDisplay(true)
+      return notification.warning({
+        message: "Failed to Register.",
+      });
+    }
+    }
+  };
+
+  const checkValidity = () => {
+    if (state["emailAddress"] === "" || state["password"] === "") {
+      setDisplay(true)
+      return notification.warning({
+        message: "Fields Should Not Be Empty",
+      });
+    } else {
+      dispatch(
+        loginUser({ ...state, type: "admin" }, (err, response) => {
+          if (err) {
+            notification.error(err);
+            setDisplay(true)
+          } else {
+            notification.success(response);
+          }
+          setSpinner(false);
+        })
+      );
+    }
+  };
+  const enterPressed =(event)=>{
+    console.log(event)
+    var code = event.keyCode || event.which;
+    console.log(code)
+    if(code === 13) { //13 is the enter keycode
+        //Do stuff in here
+        handleLogin()
+    } 
+}
+  return (
+    <Aux>
+      <Breadcrumb />
+      <div className="auth-wrapper">
+        <div className="auth-content">
+          <div className="auth-bg">
+            <span className="r" />
+            <span className="r s" />
+            <span className="r s" />
+            <span className="r" />
+          </div>
+          <div className="card">
+            <div className="card-body text-center">
+              <div className="mb-4">
+                <i className="feather icon-unlock auth-icon" />
+              </div>
+              <h3 className="mb-4">Login</h3>
+              <div className="input-group mb-3">
+                <input
+                  name="emailAddress"
+                  value={state["emailAddress"]}
+                  onChange={handleChange}
+                  type="email"
+                  className="form-control"
+                  placeholder="Email"
+                />
+              </div>
+              <p className="help-block text-danger">{errors.emailAddress}</p>
+
+              <div className="input-group mb-4">
+                <input
+                  onKeyPress = {enterPressed}
+                  name="password"
+                  value={state["password"]}
+                  onChange={handleChange}
+                  type="password"
+                  className="form-control"
+                  placeholder="password"
+                />
+              </div>
+              {spinner && <Spin />}
+              {/*
+              <div className="form-group text-left">
+                  
+                  <p className="help-block text-danger">{errors.password}</p>
+
+                  <label>
+                    Remember me 
+                    <input type="checkbox"
+                    name="checkbox-fill-1"
+                    id="checkbox-fill-a1"
+                      checked={checked}
+                      onChange={() => setChecked(!checked)}
+                    />
+                  </label><br></br>
+               
+              </div>
+              */}
+              <button
+                onClick={handleLogin}
+                className="btn btn-primary shadow-2 mb-4"
+              >
+                Login
+              </button>
+              {/*
+              <p className="mb-2 text-muted">
+                Forgot password? <NavLink to="/forgot">Reset</NavLink>
+              </p>
+              <p className="mb-0 text-muted">
+                Don’t have an account?{" "}
+                <NavLink to="/admin/register">Signup</NavLink>
+              </p>
+              */}
+            </div>
+          </div>
+        </div>
+      </div>
+    </Aux>
+  );
+};
+
+export default AdminLogin;
